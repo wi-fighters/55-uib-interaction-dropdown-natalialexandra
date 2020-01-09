@@ -6,7 +6,6 @@
 
 nav {
     width: 100%;
-    padding: 1rem;
     background-color: #000;
     color: #fff;
     font-family: sans-serif;
@@ -14,35 +13,37 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
     list-style-type: none;
-    /* transition: 2s; */
-    
 }
 
+nav ul li {
+    padding: 0.5rem;
+}
+
+nav ul li ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 nav ul li:hover {
     background-color: #2688CD;
-    /* width: 100vw; */
 }
 
 nav ul li ul {
     display: none;
-    /* width: 100vw; */
+    position: absolute;
+    left: 0;
+    background-color: #2688CD;
+    width: 100%;
 }
 
 nav ul li:hover > ul,
 ul li ul:hover {
     display: block;
-    /* width: 100%; */
 }
 
 nav ul li ul li:hover {
     background-color: #eee;
     color: #000;
-    
 }
-
-/* nav ul li ul li {
-    width: 100vw;
-} */
